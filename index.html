@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Product review</h1>
+    </header>
+    
+    <main>
+        <!-- Product Information -->
+        <section id="product Information">
+            <img src="img.jpeg" height=120 width=120>
+            <h2>Lenovo ThinkBook</h2>
+            <p>Lenovo ThinkBook 15 G5 Ryzen 5 15.6" FHD Antiglare 250 Nits Thin and Light Laptop (8GB RAM/512GB SSD/Win 11 Home/Fingerprint</p>
+        </section>
+        
+    
+
+        <!-- Reviews Section -->
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <h3>ajitha</h3>
+                <p>★★★★☆</p>
+                <p>This product is amazing! It exceeded my expectations in every way.</p>
+            </div>
+            <div class="review">
+                <h3>madhu bala</h3>
+                <p>★★★☆☆</p>
+                <p>It's good, but I expected better performance.</p>
+            </div>
+        </section>
+       
+        <!-- Review Submission Form -->
+        <section id="submit-review">
+            <h2>Submit Your Review</h2>
+            <form action="submit-review.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
+                </select>
+
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" rows="5" required></textarea>
+
+
+
+
+
+
+
+
+                <button type="submit">Submit Review</button>
+           
+                <p>thank you to buying a product<p>
+
+
+
+            
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lenovo product</p>
+    
+        </footer>
+</body>
+</html>
